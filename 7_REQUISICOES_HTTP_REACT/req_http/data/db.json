@@ -1,29 +1,54 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Camisa",
-            "price": 60.0
-        },
-        {
-            "id": 2,
-            "name": "Calça Vermelha",
-            "price": 95.0
-        },
-        {
-            "id": 3,
-            "name": "Boné aba reta",
-            "price": 28.5
-        },
-        {
-            "id": 4,
-            "name": "Cinto Preto",
-            "price": 18.5
-        },
-        {
-            "id": 5,
-            "name": "Tenis Branco",
-            "price": 350.90
-        }
-    ]
+  "products": [
+    {
+      "id": "2",
+      "name": "Calça Vermelha",
+      "price": 95
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 28.5
+    },
+    {
+      "id": "4",
+      "name": "Cinto Preto",
+      "price": 18.5
+    },
+    {
+      "id": "5",
+      "name": "Tenis Branco",
+      "price": 350.9
+    },
+    {
+      "id": "dffd",
+      "name": "teste",
+      "price": "12"
+    },
+    {
+      "id": "87a4",
+      "name": "Cadeira Gamer",
+      "price": "450.98"
+    },
+    {
+      "id": "2127",
+      "name": "PS5",
+      "price": "3400.95"
+    },
+    {
+      "id": "1d2c",
+      "name": "teste com o hook",
+      "price": "7889"
+    },
+    {
+      "id": "4abe",
+      "name": "teste 2 com o ohook",
+      "price": "4522"
+    },
+    {
+      "id": "6d17",
+      "name": "switch",
+      "price": "4556"
+    }
+  ]
 }
