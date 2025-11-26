@@ -3,22 +3,17 @@
     {
       "id": "2",
       "name": "Calça Vermelha",
-      "price": 95
+      "price": 95.5
     },
     {
       "id": "3",
       "name": "Boné aba reta",
-      "price": 28.5
-    },
-    {
-      "id": "4",
-      "name": "Cinto Preto",
-      "price": 18.5
+      "price": 28.59
     },
     {
       "id": "5",
       "name": "Tenis Branco",
-      "price": 350.9
+      "price": 350.99
     }
   ]
 }

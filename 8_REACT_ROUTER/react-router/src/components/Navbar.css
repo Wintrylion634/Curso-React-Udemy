@@ -1,0 +1,20 @@
+.navbar-list {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  margin: 0 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.link:hover {
+  color: #ccc;
+}
+
+.active {
+  background-color: #fff;
+  color: #000;
+}
