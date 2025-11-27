@@ -1,0 +1,13 @@
+.navbar-list {
+  display: flex;
+  gap: 15px;
+}
+
+.link {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.link:hover {
+  color: #ccc;
+}
