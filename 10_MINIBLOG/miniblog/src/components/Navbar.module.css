@@ -10,9 +10,11 @@
     font-size: 1.2em;
 }
 
-.brand span {
-    font-weight: 900;
-    text-transform: uppercase;
+.brand img {
+    display: block;
+    width: 140px;
+    object-fit: cover;
+    padding: 10px;
 }
 
 .links_list {
@@ -22,10 +24,18 @@
 }
 
 .links_list li a {
-    padding: .4em .6em;
+    padding: 10px 12px;
+    border-radius: 16px;
+    font-weight: bold;
 }
 
 .active {
-    background-color: #000;
-    color: #fff;
+    background: var(--btn-gradient);
+    color: var(--btn-text-hover);
+    transition: .4s;
+}
+
+.active:hover {
+    color: var(--btn-text-hover);
+    opacity: .8;
 }

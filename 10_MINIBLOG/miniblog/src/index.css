@@ -1,15 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --bg-primary: #F7F9FB;
+  --bg-secondary: #edf3f6;
+  --bg-neutral: #FFFFFF;
+  --bg-gradient: linear-gradient(180deg, #F7F9FB, #EEF2F7);
+
+  --font-primary: 'Outfit', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B7280;
+  --btn-text-hover: #fff;
+  --btn-disabled-text: #9CA3AF;
+
+  /*botões com ações primarias, tipo submit de form, criação*/
+  --btn-primary: #FF5A5F;
+
+  /*botões com acoes secundárias, como voltar, desfazer, editar*/
+  --btn-secondary: #8B5CF6;
+
+  /*ações de delete*/
+  --btn-danger: #E11D48;
+
+  --btn-disabled: #E5E7EB;
+
+  /*botão do header/navbar*/
+  --btn-gradient: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+
+
+}
+
 
 body {
-  background-color: #f6FCFF;
+  background-color: var(--bg-primary);
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
 }
 
 input::placeholder,
 textarea::placeholder {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-secondary);
 }
 
 input:focus,
@@ -22,13 +63,13 @@ nav button {
   text-decoration: none;
   background-color: transparent;
   border: none;
-  color: #000;
+  color: var(--text-primary);
   transition: .4s;
-  font-size: 1em;
+  font-size: 16px;
   cursor: pointer;
 }
 
 a:hover,
 nav button:hover {
-  color: #bbb;
+  color: var(--text-secondary);
 }
