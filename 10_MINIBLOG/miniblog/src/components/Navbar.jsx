@@ -3,9 +3,18 @@ import React from "react";
 import Logo from "../assets/brand-logo.png";
 
 import { NavLink } from "react-router-dom";
+
+import { useAuthentication } from "../hooks/useAuthentication";
+
+import { useAuthValue } from "../context/AuthContext";
+
 import styles from "./Navbar.module.css";
 
 const NavBar = () => {
+
+  const { user } = useAuthValue();
+  const { logout } = useAuthentication();
+
   return (
     <nav className={styles.navbar}>
       <NavLink className={styles.brand} to={"/"}>
@@ -20,6 +29,46 @@ const NavBar = () => {
             Home
           </NavLink>
         </li>
+        {!user && (
+          <>
+            <li>
+              <NavLink
+                to={"/login"}
+                className={({ isActive }) => (isActive ? styles.active : "")}
+              >
+                Login
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/Registro"}
+                className={({ isActive }) => (isActive ? styles.active : "")}
+              >
+                Registre-se
+              </NavLink>
+            </li>
+          </>
+        )}
+        {user && (
+          <>
+            <li>
+              <NavLink
+                to={"/posts/create"}
+                className={({ isActive }) => (isActive ? styles.active : "")}
+              >
+                Novo Post
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/dashboard"}
+                className={({ isActive }) => (isActive ? styles.active : "")}
+              >
+                Dashboard
+              </NavLink>
+            </li>
+          </>
+        )}
         <li>
           <NavLink
             to={"/about"}
@@ -28,22 +77,11 @@ const NavBar = () => {
             Sobre
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to={"/login"}
-            className={({ isActive }) => (isActive ? styles.active : "")}
-          >
-            Login
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to={"/Registro"}
-            className={({ isActive }) => (isActive ? styles.active : "")}
-          >
-            Registre-se
-          </NavLink>
-        </li>
+        {user && (
+          <li>
+            <a onClick={logout}>Sair</a>
+          </li>
+        )}
       </ul>
     </nav>
   );

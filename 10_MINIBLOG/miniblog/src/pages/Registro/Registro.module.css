@@ -8,6 +8,10 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
+.tituloRegistro {
+    font-size: 40px;
+}
+
 .textRegistro {
     color: var(--text-secondary);
 }
@@ -65,4 +69,10 @@
 
 .btnRegistro.danger {
     background: var(--btn-danger);
+}
+
+.error{
+    color: var(--btn-danger);
+    font-size: 16px;
+    margin-top: 5px;
 }

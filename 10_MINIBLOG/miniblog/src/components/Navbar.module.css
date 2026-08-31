@@ -19,11 +19,12 @@
 
 .links_list {
     display: flex;
+    align-items: center;
     list-style: none;
     margin-right: 1em;
 }
 
-.links_list li a {
+.links_list li a, .links_list li button {
     padding: 10px 12px;
     border-radius: 16px;
     font-weight: bold;

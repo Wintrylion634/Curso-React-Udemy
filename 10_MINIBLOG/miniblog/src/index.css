@@ -63,6 +63,7 @@ nav button {
   text-decoration: none;
   background-color: transparent;
   border: none;
+  font-family: var(--font-secondary);
   color: var(--text-primary);
   transition: .4s;
   font-size: 16px;
