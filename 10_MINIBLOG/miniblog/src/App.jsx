@@ -51,8 +51,8 @@ function App() {
               <Route path="/about" element={<About />}></Route>
               <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />}></Route>
               <Route path="/registro" element={!user ? <Registro /> : <Navigate to="/" />}></Route>
-              <Route path="/dashboard" element={!user ? <Dashboard />  : <Navigate to="/" />}></Route>
-              <Route path="/posts/create" element={!user ? <CreatePost />  : <Navigate to="/" />}></Route>
+              <Route path="/dashboard" element={user ? <Dashboard />  : <Navigate to="/" />}></Route>
+              <Route path="/posts/create" element={user ? <CreatePost />  : <Navigate to="/" />}></Route>
             </Routes>
           </div>
           <Footer />

@@ -1,0 +1,99 @@
+.createPost{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: var(--bg-secondary);
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+}
+
+.postTitle{
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.postDescription{
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.formCreatePost{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.formCreatePost label{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    width: 60%;
+}
+
+.formLabelText{
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.formInput{
+    padding: 10px 0px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    width: 100%;
+    font-family: var(--font-secondary);
+}
+
+.formInput:focus{
+    border-color: #FF5A5F;
+}
+
+.btnCreatePost{
+    font-family: var(--font-secondary);
+    background: var(--btn-primary);
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    color: var(--btn-text-hover);
+    transition: .4s;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 250px;
+    cursor: pointer;
+}
+
+.btnCreatePost:hover{
+    opacity: .8;
+}
+
+.btnCreatePost:disabled{
+    background: var(--btn-disabled);
+    color: var(--btn-disabled-text);
+    cursor: not-allowed;
+}
+
+textarea{
+    height: 25px;
+}
+
+.error{
+    color: var(--btn-danger);
+    font-size: 16px;
+    margin-top: 5px;
+}
